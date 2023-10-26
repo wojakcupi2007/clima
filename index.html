@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css">
+        <title>clima</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+        <link rel="shortcut icon" href=" " type="image/x-icon" />
+        <script src="script.js" defer></script>
+
+      </head>
+      <head>
+        <style>
+            .nube:after {
+                width: 100px;
+                height: 100px;
+                top: -50px;
+                left: 50px;
+                border-radius: 100px;
+            }
+    
+            .nube:before {
+                width: 200px;
+                height: 200px;
+                top: -90px;
+                right: 50px;
+                border-radius: 200px;
+            }
+    
+            .nube:after, .nube:before {
+                content: '';
+                position: absolute;
+                background: #FFF;
+                z-index: -1;
+            }
+    
+            .nube {
+                width: 350px;
+                height: 120px;
+                background: #BFF;
+                background: linear-gradient(top, #BFF 5%, #DFF 100%);
+                background: -webkit-linear-gradient(top, #FFF 1%, #BFF 100%);
+                background: -moz-linear-gradient(top, #BFF 5%, #DFF 100%);
+                background: -ms-linear-gradient(top, #BFF 5%, #DFF 100%);
+                background: -o-linear-gradient(top, #BFF 5%, #DFF 100%);
+                top: 50px;
+                left: 50px;
+                border-radius: 100px;
+                position: absolute;
+                z-index: -2;
+            }
+        </style>
+      </head>
+</html>
+
+<body>
+    <div class="nubes">
+        
+    </div>
+    <section class="weather-content">
+        
+        <h1>Buscador del clima</h1>
+        <div class="result">
+            <p>Agrege cuidad y país</p>
+        </div>
+        <form action="" method="POST" class="get-weather">
+            <input type="text" name="city" id="city" placeholder="Write your city...">
+            <select name="" id="country">
+                <option disabled selected value="">Select the country</option>
+                <option value="AR">Argentina</option>
+                <option value="BO">Bolivia</option>
+                <option value="CHI">Chile</option>
+                <option value="MX">México</option>
+                <option value="PE">Perú</option>
+            </select>
+            <input type="submit" name="" id="" value="Get Weather">
+        </form>
+    </section>
+    
+</body>
+</html>
